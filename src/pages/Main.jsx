@@ -14,7 +14,7 @@ import { isLogged, logout } from '../features/auth/authSlice'
 import { getBets, getCoins, sendBet, coinsReset, resetBets, afterRoundReset, addBet, redUpdate, blackUpdate, greenUpdate, freeCoins } from '../features/bets/betsSlice'
 import { getMessages, sendMessage, resetMessages, addMessage } from '../features/messages/messagesSlice'
 import io from 'socket.io-client'
-const socket = io.connect(`http://localhost:${process.env.PORT || 5000}`)
+const socket = io.connect(`https://for-fun-casino-api.onrender.com`)
 
 function Number({ n }) {
   const { number } = useSpring({
