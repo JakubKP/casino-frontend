@@ -109,6 +109,8 @@ function Main() {
     dispatch(sendMessage({
       message,
     }))
+    
+    setMessage('')
   }
 
   const getFreeCoins = () => {
@@ -429,7 +431,7 @@ function Main() {
               <div className='bet-value-section'>
                 <div className='bet-value-input'>
                   <img src={coinsImage} alt='coins' className='coins-image'/>
-                  <input id='betValue' type='number' value={betValue} onChange={(e) => setBetValue(e.target.value)}/>
+                  <input id='betValue' type='number' value={betValue} onChange={(e) => setBetValue(e.target.valueAsNumber)}/>
                 </div>
                 <div className='bet-buttons'>
                   <button className='bet-value-button clear' onClick={() => setBetValue(0)}>CLEAR</button>
