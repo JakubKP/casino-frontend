@@ -29,7 +29,7 @@ function Main() {
   const [winner, setWinner] = useState('')
   const [login, setLogin] = useState(false)
   const [register, setRegister] = useState(false)
-  const [chatActive, setChatActive] = useState(true)
+  const [chatActive, setChatActive] = useState(false)
   const [betValue, setBetValue] = useState(0)
   const [rouletteNumber, setRouletteNumber] = useState('')
   const [timerActive, setTimerActive] = useState('flex')
